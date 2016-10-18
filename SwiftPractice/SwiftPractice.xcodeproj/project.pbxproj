@@ -49,6 +49,7 @@
 		8325362A1DB4900500B23486 /* SwiftPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8325362E1DB4900500B23486 /* SwiftPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPracticeUITests.swift; sourceTree = "<group>"; };
 		832536301DB4900500B23486 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83FDEF1C1DB6E27D00F866C6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +100,7 @@
 		8325360A1DB4900500B23486 /* SwiftPractice */ = {
 			isa = PBXGroup;
 			children = (
+				83FDEF1B1DB6E26A00F866C6 /* Resources */,
 				8325360B1DB4900500B23486 /* AppDelegate.swift */,
 				8325360D1DB4900500B23486 /* ViewController.swift */,
 				8325360F1DB4900500B23486 /* Main.storyboard */,
@@ -126,6 +128,14 @@
 				832536301DB4900500B23486 /* Info.plist */,
 			);
 			path = SwiftPracticeUITests;
+			sourceTree = "<group>";
+		};
+		83FDEF1B1DB6E26A00F866C6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				83FDEF1C1DB6E27D00F866C6 /* README.md */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -509,6 +519,7 @@
 				832536351DB4900500B23486 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		832536361DB4900500B23486 /* Build configuration list for PBXNativeTarget "SwiftPracticeTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +528,7 @@
 				832536381DB4900500B23486 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		832536391DB4900500B23486 /* Build configuration list for PBXNativeTarget "SwiftPracticeUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +537,7 @@
 				8325363B1DB4900500B23486 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
