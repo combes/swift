@@ -49,6 +49,7 @@
 		8325362A1DB4900500B23486 /* SwiftPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8325362E1DB4900500B23486 /* SwiftPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPracticeUITests.swift; sourceTree = "<group>"; };
 		832536301DB4900500B23486 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83E3A4761DB82B4F00DC9626 /* FunctionsAndClosures.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FunctionsAndClosures.playground; sourceTree = "<group>"; };
 		83FDEF1C1DB6E27D00F866C6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		83FDEF1E1DB6E56A00F866C6 /* SimpleValues.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = SimpleValues.playground; path = Playgrounds/SimpleValues.playground; sourceTree = SOURCE_ROOT; };
 		83FDEF201DB6E5A900F866C6 /* ControlFlow.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = ControlFlow.playground; path = Playgrounds/ControlFlow.playground; sourceTree = SOURCE_ROOT; };
@@ -146,6 +147,7 @@
 			children = (
 				83FDEF1E1DB6E56A00F866C6 /* SimpleValues.playground */,
 				83FDEF201DB6E5A900F866C6 /* ControlFlow.playground */,
+				83E3A4761DB82B4F00DC9626 /* FunctionsAndClosures.playground */,
 			);
 			name = Playgrounds;
 			sourceTree = "<group>";
