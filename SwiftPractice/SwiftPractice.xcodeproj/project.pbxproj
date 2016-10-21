@@ -35,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8315C79A1DBAC64F00FADFA0 /* EnumerationsAndStructures.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = EnumerationsAndStructures.playground; path = Playgrounds/EnumerationsAndStructures.playground; sourceTree = SOURCE_ROOT; };
 		832536081DB4900500B23486 /* SwiftPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8325360B1DB4900500B23486 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8325360D1DB4900500B23486 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +151,7 @@
 				83FDEF1E1DB6E56A00F866C6 /* SimpleValues.playground */,
 				83FDEF201DB6E5A900F866C6 /* ControlFlow.playground */,
 				83EB5CB41DB97C5200061CB9 /* ObjectsAndClasses.playground */,
+				8315C79A1DBAC64F00FADFA0 /* EnumerationsAndStructures.playground */,
 			);
 			name = Playgrounds;
 			sourceTree = "<group>";
