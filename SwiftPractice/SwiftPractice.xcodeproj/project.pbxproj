@@ -35,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4816757E1DBFF0F200CE1B27 /* ErrorHandling.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = ErrorHandling.playground; path = Playgrounds/ErrorHandling.playground; sourceTree = SOURCE_ROOT; };
+		48A1AB6A1DBFF8A8008BA385 /* Generics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Generics.playground; path = Playgrounds/Generics.playground; sourceTree = SOURCE_ROOT; };
 		831321B11DBEACBA000C8BBB /* ProtocolsAndExtensions.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = ProtocolsAndExtensions.playground; path = Playgrounds/ProtocolsAndExtensions.playground; sourceTree = SOURCE_ROOT; };
 		8315C79A1DBAC64F00FADFA0 /* EnumerationsAndStructures.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = EnumerationsAndStructures.playground; path = Playgrounds/EnumerationsAndStructures.playground; sourceTree = SOURCE_ROOT; };
 		832536081DB4900500B23486 /* SwiftPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,6 +158,8 @@
 				8315C79A1DBAC64F00FADFA0 /* EnumerationsAndStructures.playground */,
 				831321B11DBEACBA000C8BBB /* ProtocolsAndExtensions.playground */,
 				838939CE1DC1408400A5DF87 /* ConstantsAndVariables.playground */,
+				4816757E1DBFF0F200CE1B27 /* ErrorHandling.playground */,
+				48A1AB6A1DBFF8A8008BA385 /* Generics.playground */,
 			);
 			name = Playgrounds;
 			sourceTree = "<group>";
