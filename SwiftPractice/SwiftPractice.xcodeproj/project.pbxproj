@@ -51,6 +51,7 @@
 		8325362A1DB4900500B23486 /* SwiftPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8325362E1DB4900500B23486 /* SwiftPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPracticeUITests.swift; sourceTree = "<group>"; };
 		832536301DB4900500B23486 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		838939CE1DC1408400A5DF87 /* ConstantsAndVariables.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = ConstantsAndVariables.playground; path = Playgrounds/ConstantsAndVariables.playground; sourceTree = SOURCE_ROOT; };
 		83EB5CB41DB97C5200061CB9 /* ObjectsAndClasses.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = ObjectsAndClasses.playground; path = Playgrounds/ObjectsAndClasses.playground; sourceTree = SOURCE_ROOT; };
 		83EB5CB51DB97C8100061CB9 /* FunctionsAndClosures.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = FunctionsAndClosures.playground; path = Playgrounds/FunctionsAndClosures.playground; sourceTree = SOURCE_ROOT; };
 		83FDEF1C1DB6E27D00F866C6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
@@ -154,6 +155,7 @@
 				83EB5CB41DB97C5200061CB9 /* ObjectsAndClasses.playground */,
 				8315C79A1DBAC64F00FADFA0 /* EnumerationsAndStructures.playground */,
 				831321B11DBEACBA000C8BBB /* ProtocolsAndExtensions.playground */,
+				838939CE1DC1408400A5DF87 /* ConstantsAndVariables.playground */,
 			);
 			name = Playgrounds;
 			sourceTree = "<group>";
