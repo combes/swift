@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -42,10 +43,23 @@
                                     <constraint firstItem="1Vz-f3-taA" firstAttribute="leading" secondItem="JQj-ag-WEo" secondAttribute="leading" id="qbj-AW-3Ln"/>
                                 </constraints>
                             </stackView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="pH7-Cw-LbV">
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pH7-Cw-LbV" secondAttribute="height" multiplier="1:1" id="KMl-NP-F8A"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="SBO-W4-35u" appends="YES" id="W73-D8-xpX"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="pH7-Cw-LbV" secondAttribute="trailing" constant="4" id="LgI-E7-VzC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="JQj-ag-WEo" secondAttribute="trailing" id="chY-2m-eWr"/>
+                            <constraint firstItem="pH7-Cw-LbV" firstAttribute="top" secondItem="JQj-ag-WEo" secondAttribute="bottom" constant="8.5" id="pYu-a4-ZqW"/>
+                            <constraint firstItem="pH7-Cw-LbV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="qDK-lQ-11b"/>
                             <constraint firstItem="JQj-ag-WEo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wDf-Qk-W0f"/>
                             <constraint firstItem="JQj-ag-WEo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="xyn-8N-20e"/>
                         </constraints>
@@ -53,11 +67,20 @@
                     <connections>
                         <outlet property="mealNameLabel" destination="6mh-lS-93j" id="98G-iS-APo"/>
                         <outlet property="nameTextField" destination="1Vz-f3-taA" id="hPO-HW-0GY"/>
+                        <outlet property="photoImageView" destination="pH7-Cw-LbV" id="9Ne-Zz-o6x"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="SBO-W4-35u">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="J6x-8A-8cQ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="135.19999999999999" y="138.0809595202399"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="DefaultPhoto" width="540" height="540"/>
+    </resources>
 </document>
