@@ -21,3 +21,12 @@ let value = 3 + 0.14159 // Type is inferred during the compilation phase
 typealias AudioSample = UInt16
 var maxAmplitude = AudioSample.min
 
+// Booleans
+let orangesAreOrange = true
+let turnipsAreDelicious = false
+
+if turnipsAreDelicious {
+    print("Mmmmm, tasty turnips!")
+} else {
+    print("Turnips are not too good")
+}
