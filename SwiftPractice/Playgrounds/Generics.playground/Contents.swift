@@ -50,7 +50,7 @@ func commonElements<T: Sequence, U: Sequence>(_ lhs: T, _ rhs: U) -> [AnyObject]
         for lhsItem in lhs {
             for rhsItem in rhs {
                 if lhsItem == rhsItem {
-                    commonElements.append(rhsItem as! AnyObject)
+                    commonElements.append(rhsItem as AnyObject)
                 }
             }
         }

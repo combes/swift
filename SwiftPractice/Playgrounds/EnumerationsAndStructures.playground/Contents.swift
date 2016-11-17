@@ -30,7 +30,7 @@ enum Rank: Int {
 let ace = Rank.ace
 let aceRawValue = ace.rawValue
 
-// Write a function that comparest two Rank values by comparing their raw values
+// Write a function that compares two Rank values by comparing their raw values
 func compare(first: Rank, second: Rank) -> ComparisonResult {
     if (first.rawValue < second.rawValue) {
         return ComparisonResult.orderedAscending

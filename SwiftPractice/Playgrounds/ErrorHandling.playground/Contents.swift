@@ -38,7 +38,7 @@ do {
 do {
     let printerResponse = try send(job: 1440, toPrinter: "Gutenberg")
     throw PrinterError.outOfPaper // Testing throwing an error here
-    print(printerResponse)
+    // print(printerResponse)
 } catch PrinterError.onFire {
     print("I'll just put this over here, with the rest of the fire")
 } catch let printerError as PrinterError {
