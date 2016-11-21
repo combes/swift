@@ -42,3 +42,14 @@ occupations["Lois Lane"] = "Reporter"
 let emptyDictionary = [String : Float]()
 print(emptyDictionary)
 occupations = [:] // Type information inferred from previous declaration
+
+// Tuples
+let http404Error = (404, "Not Found")
+let (statusCode, statusMessage) = http404Error
+let (justTheStatusCode, _) = http404Error
+// Access values by index
+print("The status code is \(http404Error.0)")
+// You can name individual elements in a tuple
+let http200Status = (statusCode: 200, description: "OK")
+print("The status code is \(http200Status.statusCode)")
+let canATupleHoldATuple = (1, (1,2))
