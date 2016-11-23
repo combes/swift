@@ -69,6 +69,10 @@ func fridgeContains(_ food: String) -> Bool {
 fridgeContains("banana")
 print(fridgeIsOpen)
 
+// Example assertion
+// let age = -3
+// assert(age >= 0, "A person's age cannot be less than zero")
+
 
 
 
