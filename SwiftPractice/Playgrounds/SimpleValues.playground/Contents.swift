@@ -53,3 +53,12 @@ print("The status code is \(http404Error.0)")
 let http200Status = (statusCode: 200, description: "OK")
 print("The status code is \(http200Status.statusCode)")
 let canATupleHoldATuple = (1, (1,2))
+
+// a = (b x some multiplier) + remainder
+// 1 = (2 x 0) + 1
+// Remainder is the left over 1
+1 % 2
+
+
+
+
