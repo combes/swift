@@ -59,6 +59,119 @@ let canATupleHoldATuple = (1, (1,2))
 // Remainder is the left over 1
 1 % 2
 
+// Comparison Operators
+class Something {}
+let x = Something()
+let y = x
+let z = Something()
+if x === y {
+    print("Same reference")
+}
+if x !== z {
+    print("Different reference")
+}
+
+let anotherName = "world"
+if anotherName == "world" {
+    print("Same")
+} else {
+    print("Not same")
+}
+
+// Tuples are compared from left to right, one value at a time.
+(1, "zebra") < (2, "apple")
+(3, "apple") < (3, "bird")
+(4, "dog") == (4, "dog")
+(1,2,3,4,5,6) == (1,2,3,4,5,6) // Max tuple comparison of 6 elements
+
+// Ternary Conditional Operator
+let contentHeight = 40
+let hasHeader = true
+let rowHeight = contentHeight + (hasHeader ? 50 : 20)
+
+// Nil-Coalescing Operator
+var a:String?
+var b = "name"
+a != nil ? a! : b // Shorthand for this
+a ?? b // Provides short-circuit evaluation
+
+// Closed Range Operator (a...b)
+(1...2)
+// (2...1) // The value of 'a' must not be greater than 'b'
+for index in 1...5 {
+    print("\(index) times 5 is \(index * 5)")
+}
+
+// Half-Open Range Operator (a..<b)
+(1..<2)
+let names = ["Anna", "Alex", "Brian", "Jack"]
+let count = names.count
+for i in 0..<count {
+    print("Person \(i + 1) is called \(names[i])")
+}
+
+// Logical NOT Operator (!a)
+let allowedEntry = false
+if !allowedEntry {
+    print("Access denied")
+}
+
+// Logical AND Operator (a && b)
+let enteredDoorCode = true
+let passedRetinaScan = false
+if enteredDoorCode && passedRetinaScan {
+    print("Welcome!")
+} else {
+    print("Access denied")
+}
+
+// Logical OR Operator (a || b)
+let hasDoorKey = false
+let knowsOverridePassword = true
+if hasDoorKey || knowsOverridePassword {
+    print("Welcome!")
+} else {
+    print("Access denied")
+}
+
+// Combining Logical Operators as left-associative.
+if enteredDoorCode && passedRetinaScan || hasDoorKey || knowsOverridePassword {
+    print("Welcome!")
+} else {
+    print("Access denied")
+}
+
+// Explicit Parentheses
+if (enteredDoorCode && passedRetinaScan) || hasDoorKey || knowsOverridePassword {
+    print("Welcome!")
+} else {
+    print("Access denied")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
