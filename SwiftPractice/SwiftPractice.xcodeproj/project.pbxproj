@@ -53,6 +53,7 @@
 		8325362A1DB4900500B23486 /* SwiftPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8325362E1DB4900500B23486 /* SwiftPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPracticeUITests.swift; sourceTree = "<group>"; };
 		832536301DB4900500B23486 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		834E01931DEE562700B21F25 /* Strings.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Strings.playground; path = Playgrounds/Strings.playground; sourceTree = SOURCE_ROOT; };
 		835F3E171DE398AB00AD17A2 /* Optionals.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Optionals.playground; path = Playgrounds/Optionals.playground; sourceTree = SOURCE_ROOT; };
 		838939CE1DC1408400A5DF87 /* ConstantsAndVariables.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = ConstantsAndVariables.playground; path = Playgrounds/ConstantsAndVariables.playground; sourceTree = SOURCE_ROOT; };
 		838939CF1DC14F1100A5DF87 /* NumericTypeConversion.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = NumericTypeConversion.playground; path = Playgrounds/NumericTypeConversion.playground; sourceTree = SOURCE_ROOT; };
@@ -164,6 +165,7 @@
 				48A1AB6A1DBFF8A8008BA385 /* Generics.playground */,
 				838939CF1DC14F1100A5DF87 /* NumericTypeConversion.playground */,
 				835F3E171DE398AB00AD17A2 /* Optionals.playground */,
+				834E01931DEE562700B21F25 /* Strings.playground */,
 			);
 			name = Playgrounds;
 			sourceTree = "<group>";
