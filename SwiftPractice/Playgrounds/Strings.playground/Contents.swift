@@ -105,10 +105,69 @@ hello.remove(at: hello.index(before: hello.endIndex))
 let range = hello.index(hello.endIndex, offsetBy: -6)..<hello.endIndex
 hello.removeSubrange(range)
 
+// String Comparison
+let quote = "This is a quote"
+let sameQuote = "This is a quote"
+if quote == sameQuote {
+    print("Same")
+}
+// Two String values are considered equal if their extended grapheme clusters are canonically equivalent
+let eSmall = "\u{00E9}"
+let eSmallWithAccent = "\u{0065}\u{0301}"
+if eSmall == eSmallWithAccent {
+    print("'\(eSmall)' == '\(eSmallWithAccent)'")
+}
+// Some letters may appear the same but not the same linguistic meaning.
+let englishA = "\u{0041}"
+let russianA = "\u{0410}"
+if englishA != russianA {
+    print("'\(englishA)' != '\(russianA)'")
+}
 
+// Comparing prefix and suffix
+let romeoAndJuliet = [
+    "Act 1 Scene 1: Verona, A public place",
+    "Act 1 Scene 2: Capulet's mansion",
+    "Act 1 Scene 3: A room in Capulet's mansion",
+    "Act 1 Scene 4: A street outside Capulet's mansion",
+    "Act 1 Scene 5: The Great Hall in Capulet's mansion",
+    "Act 2 Scene 1: Outside Capulet's mansion",
+    "Act 2 Scene 2: Capulet's orchard",
+    "Act 2 Scene 3: Outside Friar Lawrence's cell",
+    "Act 2 Scene 4: A street in Verona",
+    "Act 2 Scene 5: Capulet's mansion",
+    "Act 2 Scene 6: Friar Lawrence's cell"
+]
+var actOneSceneCount = 0
+var searchPrefix = "Act 1"
+for scene in romeoAndJuliet {
+    if scene.hasPrefix(searchPrefix) {
+        actOneSceneCount += 1
+    }
+}
+print("There are \(actOneSceneCount) scenes in \(searchPrefix)")
+var mansionCount = 0
+var searchSuffix = "mansion"
+for scene in romeoAndJuliet {
+    if scene.hasSuffix(searchSuffix) {
+        mansionCount += 1
+    }
+}
+print("There are \(mansionCount) mansion scenes")
 
-
-
+// Unicode Representations of Strings
+let dogString = "Dog‼🐶"
+for codeUnit in dogString.utf8 {
+    print("\(codeUnit) ", terminator: "")
+}
+print("\r")
+for codeUnit in dogString.utf16 {
+    print("\(codeUnit) ", terminator: "")
+}
+print("\r")
+for scalar in dogString.unicodeScalars {
+    print("\(scalar.value) ", terminator: "")
+}
 
 
 
