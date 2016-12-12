@@ -57,9 +57,11 @@
 		8357797D1DF9D37800F3AF8A /* Sets.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Sets.playground; path = Playgrounds/Sets.playground; sourceTree = SOURCE_ROOT; };
 		8357E0091DFB5DAC007D572F /* Dictionaries.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Dictionaries.playground; path = Playgrounds/Dictionaries.playground; sourceTree = SOURCE_ROOT; };
 		835F3E171DE398AB00AD17A2 /* Optionals.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Optionals.playground; path = Playgrounds/Optionals.playground; sourceTree = SOURCE_ROOT; };
+		8387DD581DFF58E000B2F62B /* CheckingAPI.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = CheckingAPI.playground; path = Playgrounds/CheckingAPI.playground; sourceTree = SOURCE_ROOT; };
 		838939CE1DC1408400A5DF87 /* ConstantsAndVariables.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = ConstantsAndVariables.playground; path = Playgrounds/ConstantsAndVariables.playground; sourceTree = SOURCE_ROOT; };
 		838939CF1DC14F1100A5DF87 /* NumericTypeConversion.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = NumericTypeConversion.playground; path = Playgrounds/NumericTypeConversion.playground; sourceTree = SOURCE_ROOT; };
 		83B68B391DF89C59009AF690 /* Arrays.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Arrays.playground; path = Playgrounds/Arrays.playground; sourceTree = SOURCE_ROOT; };
+		83E6FEC91DFF2C57000CF5D2 /* MoreControlFlow.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = MoreControlFlow.playground; path = Playgrounds/MoreControlFlow.playground; sourceTree = SOURCE_ROOT; };
 		83EB5CB41DB97C5200061CB9 /* ObjectsAndClasses.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = ObjectsAndClasses.playground; path = Playgrounds/ObjectsAndClasses.playground; sourceTree = SOURCE_ROOT; };
 		83EB5CB51DB97C8100061CB9 /* FunctionsAndClosures.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = FunctionsAndClosures.playground; path = Playgrounds/FunctionsAndClosures.playground; sourceTree = SOURCE_ROOT; };
 		83FDEF1C1DB6E27D00F866C6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
@@ -172,6 +174,8 @@
 				83B68B391DF89C59009AF690 /* Arrays.playground */,
 				8357797D1DF9D37800F3AF8A /* Sets.playground */,
 				8357E0091DFB5DAC007D572F /* Dictionaries.playground */,
+				83E6FEC91DFF2C57000CF5D2 /* MoreControlFlow.playground */,
+				8387DD581DFF58E000B2F62B /* CheckingAPI.playground */,
 			);
 			name = Playgrounds;
 			sourceTree = "<group>";

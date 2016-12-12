@@ -1,4 +1,5 @@
 //: Playground - noun: a place where people can play
+// Excerpt From: Apple Inc. “The Swift Programming Language (Swift 3).” iBooks. https://itun.es/us/jEUH0.l
 
 // Control Flow
 let individualScores = [75, 43, 103, 87, 12];
@@ -63,8 +64,6 @@ for (kind, numbers) in interestingNumbers {
 
 print("Largest number is \(largest) from the \(largestKind) sequence")
 
-
-
 var n = 2
 while n < 100 {
     n = n * 2
@@ -82,21 +81,4 @@ for i in 0..<4 { // ..< omits upper value, ... includes upper value
     total += i
 }
 print(total)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

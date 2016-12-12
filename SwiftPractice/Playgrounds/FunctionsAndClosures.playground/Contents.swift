@@ -1,4 +1,5 @@
 //: Playground - noun: a place where people can play
+// Excerpt From: Apple Inc. “The Swift Programming Language (Swift 3).” iBooks. https://itun.es/us/jEUH0.l
 
 // Use 'func' to declare a function
 func greet(person: String, day: String, lunchSpecial: String) -> String {

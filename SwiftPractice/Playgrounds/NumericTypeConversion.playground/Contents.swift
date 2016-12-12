@@ -1,4 +1,5 @@
 //: Playground - noun: a place where people can play
+// Excerpt From: Apple Inc. “The Swift Programming Language (Swift 3).” iBooks. https://itun.es/us/jEUH0.l
 
 // Overflow
 // let cannotBeNegative: UInt8 = -1 // Cannot store negative value in a type of UInt

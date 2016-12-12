@@ -85,6 +85,8 @@ if anotherName == "world" {
 (1,2,3,4,5,6) == (1,2,3,4,5,6) // Max tuple comparison of 6 elements
 
 // Ternary Conditional Operator
+// Excerpt From: Apple Inc. “The Swift Programming Language (Swift 3).” iBooks. https://itun.es/us/jEUH0.l
+
 let contentHeight = 40
 let hasHeader = true
 let rowHeight = contentHeight + (hasHeader ? 50 : 20)
