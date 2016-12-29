@@ -67,6 +67,7 @@
 		838939CF1DC14F1100A5DF87 /* NumericTypeConversion.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = NumericTypeConversion.playground; path = Playgrounds/NumericTypeConversion.playground; sourceTree = SOURCE_ROOT; };
 		83B68B391DF89C59009AF690 /* Arrays.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Arrays.playground; path = Playgrounds/Arrays.playground; sourceTree = SOURCE_ROOT; };
 		83CAF08B1E157DBF00A6145D /* Methods.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Methods.playground; path = Playgrounds/Methods.playground; sourceTree = SOURCE_ROOT; };
+		83CAF08C1E158D2900A6145D /* Subscripts.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Subscripts.playground; path = Playgrounds/Subscripts.playground; sourceTree = SOURCE_ROOT; };
 		83E6FEC91DFF2C57000CF5D2 /* MoreControlFlow.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = MoreControlFlow.playground; path = Playgrounds/MoreControlFlow.playground; sourceTree = SOURCE_ROOT; };
 		83EB5CB41DB97C5200061CB9 /* ObjectsAndClasses.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = ObjectsAndClasses.playground; path = Playgrounds/ObjectsAndClasses.playground; sourceTree = SOURCE_ROOT; };
 		83EB5CB51DB97C8100061CB9 /* FunctionsAndClosures.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = FunctionsAndClosures.playground; path = Playgrounds/FunctionsAndClosures.playground; sourceTree = SOURCE_ROOT; };
@@ -188,6 +189,7 @@
 				83205E9A1E12ECDE0042A51D /* ClassesAndStructures.playground */,
 				833DF5221E1481ED003ACB5C /* Properties.playground */,
 				83CAF08B1E157DBF00A6145D /* Methods.playground */,
+				83CAF08C1E158D2900A6145D /* Subscripts.playground */,
 			);
 			name = Playgrounds;
 			sourceTree = "<group>";
