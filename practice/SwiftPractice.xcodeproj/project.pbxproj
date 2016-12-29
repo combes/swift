@@ -56,6 +56,7 @@
 		8325362A1DB4900500B23486 /* SwiftPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8325362E1DB4900500B23486 /* SwiftPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPracticeUITests.swift; sourceTree = "<group>"; };
 		832536301DB4900500B23486 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		833DF5221E1481ED003ACB5C /* Properties.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Properties.playground; path = Playgrounds/Properties.playground; sourceTree = SOURCE_ROOT; };
 		834E01931DEE562700B21F25 /* Strings.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Strings.playground; path = Playgrounds/Strings.playground; sourceTree = SOURCE_ROOT; };
 		8357797D1DF9D37800F3AF8A /* Sets.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Sets.playground; path = Playgrounds/Sets.playground; sourceTree = SOURCE_ROOT; };
 		8357E0091DFB5DAC007D572F /* Dictionaries.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Dictionaries.playground; path = Playgrounds/Dictionaries.playground; sourceTree = SOURCE_ROOT; };
@@ -184,6 +185,7 @@
 				835B1A8D1E03550A00AE3E03 /* Closures.playground */,
 				831F4FAE1E08AD0900D74632 /* MoreEnumerations.playground */,
 				83205E9A1E12ECDE0042A51D /* ClassesAndStructures.playground */,
+				833DF5221E1481ED003ACB5C /* Properties.playground */,
 			);
 			name = Playgrounds;
 			sourceTree = "<group>";
