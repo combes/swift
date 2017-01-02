@@ -66,6 +66,7 @@
 		8387DD581DFF58E000B2F62B /* CheckingAPI.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = CheckingAPI.playground; path = Playgrounds/CheckingAPI.playground; sourceTree = SOURCE_ROOT; };
 		838939CE1DC1408400A5DF87 /* ConstantsAndVariables.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = ConstantsAndVariables.playground; path = Playgrounds/ConstantsAndVariables.playground; sourceTree = SOURCE_ROOT; };
 		838939CF1DC14F1100A5DF87 /* NumericTypeConversion.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = NumericTypeConversion.playground; path = Playgrounds/NumericTypeConversion.playground; sourceTree = SOURCE_ROOT; };
+		839955721E1AE99B00DE03CF /* Initialization.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Initialization.playground; path = Playgrounds/Initialization.playground; sourceTree = SOURCE_ROOT; };
 		83B68B391DF89C59009AF690 /* Arrays.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Arrays.playground; path = Playgrounds/Arrays.playground; sourceTree = SOURCE_ROOT; };
 		83CAF08B1E157DBF00A6145D /* Methods.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Methods.playground; path = Playgrounds/Methods.playground; sourceTree = SOURCE_ROOT; };
 		83CAF08C1E158D2900A6145D /* Subscripts.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Subscripts.playground; path = Playgrounds/Subscripts.playground; sourceTree = SOURCE_ROOT; };
@@ -192,6 +193,7 @@
 				83CAF08B1E157DBF00A6145D /* Methods.playground */,
 				83CAF08C1E158D2900A6145D /* Subscripts.playground */,
 				8384DC531E17084A00C5F41D /* Inheritance.playground */,
+				839955721E1AE99B00DE03CF /* Initialization.playground */,
 			);
 			name = Playgrounds;
 			sourceTree = "<group>";

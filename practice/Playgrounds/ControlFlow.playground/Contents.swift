@@ -20,7 +20,7 @@ print(optionalString == nil)
 var optionalName: String? = "John Appleseed"
 optionalName = nil // No greeting is printed, as expected
 var greeting = "Hello!"
-if let name = optionalName {
+if let name = optionalName { // Use "optional binding" to find out whether an optional contains a value
     greeting = "Hello, \(name)"
 } else {
     greeting = "Hello, stranger"
