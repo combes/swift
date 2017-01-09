@@ -58,6 +58,7 @@
 		8325362E1DB4900500B23486 /* SwiftPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPracticeUITests.swift; sourceTree = "<group>"; };
 		832536301DB4900500B23486 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		832F633A1E23218400285569 /* OptionalChaining.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = OptionalChaining.playground; path = Playgrounds/OptionalChaining.playground; sourceTree = SOURCE_ROOT; };
+		8338C8801E244436003DFE80 /* MoreErrorHandling.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = MoreErrorHandling.playground; path = Playgrounds/MoreErrorHandling.playground; sourceTree = SOURCE_ROOT; };
 		833DF5221E1481ED003ACB5C /* Properties.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Properties.playground; path = Playgrounds/Properties.playground; sourceTree = SOURCE_ROOT; };
 		834E01931DEE562700B21F25 /* Strings.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Strings.playground; path = Playgrounds/Strings.playground; sourceTree = SOURCE_ROOT; };
 		8357797D1DF9D37800F3AF8A /* Sets.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Sets.playground; path = Playgrounds/Sets.playground; sourceTree = SOURCE_ROOT; };
@@ -200,6 +201,7 @@
 				839955731E1B178B00DE03CF /* Deinitialization.playground */,
 				8316BFDC1E1DA07800ED4800 /* AutomaticReferenceCounting.playground */,
 				832F633A1E23218400285569 /* OptionalChaining.playground */,
+				8338C8801E244436003DFE80 /* MoreErrorHandling.playground */,
 			);
 			name = Playgrounds;
 			sourceTree = "<group>";
