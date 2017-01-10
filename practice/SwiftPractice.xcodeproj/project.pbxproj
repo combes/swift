@@ -72,6 +72,7 @@
 		839955721E1AE99B00DE03CF /* Initialization.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Initialization.playground; path = Playgrounds/Initialization.playground; sourceTree = SOURCE_ROOT; };
 		839955731E1B178B00DE03CF /* Deinitialization.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Deinitialization.playground; path = Playgrounds/Deinitialization.playground; sourceTree = SOURCE_ROOT; };
 		83B68B391DF89C59009AF690 /* Arrays.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Arrays.playground; path = Playgrounds/Arrays.playground; sourceTree = SOURCE_ROOT; };
+		83B6B04C1E25542A0080BAD6 /* TypeCasting.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = TypeCasting.playground; path = Playgrounds/TypeCasting.playground; sourceTree = SOURCE_ROOT; };
 		83CAF08B1E157DBF00A6145D /* Methods.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Methods.playground; path = Playgrounds/Methods.playground; sourceTree = SOURCE_ROOT; };
 		83CAF08C1E158D2900A6145D /* Subscripts.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Subscripts.playground; path = Playgrounds/Subscripts.playground; sourceTree = SOURCE_ROOT; };
 		83E6FEC91DFF2C57000CF5D2 /* MoreControlFlow.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = MoreControlFlow.playground; path = Playgrounds/MoreControlFlow.playground; sourceTree = SOURCE_ROOT; };
@@ -202,6 +203,7 @@
 				8316BFDC1E1DA07800ED4800 /* AutomaticReferenceCounting.playground */,
 				832F633A1E23218400285569 /* OptionalChaining.playground */,
 				8338C8801E244436003DFE80 /* MoreErrorHandling.playground */,
+				83B6B04C1E25542A0080BAD6 /* TypeCasting.playground */,
 			);
 			name = Playgrounds;
 			sourceTree = "<group>";
