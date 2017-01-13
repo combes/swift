@@ -36,6 +36,8 @@
 
 /* Begin PBXFileReference section */
 		4816757E1DBFF0F200CE1B27 /* ErrorHandling.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = ErrorHandling.playground; path = Playgrounds/ErrorHandling.playground; sourceTree = SOURCE_ROOT; };
+		48980BE91E28554E006BCEAC /* Extensions.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Extensions.playground; path = Playgrounds/Extensions.playground; sourceTree = SOURCE_ROOT; };
+		48980BEA1E285EA1006BCEAC /* Protocols.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Protocols.playground; path = Playgrounds/Protocols.playground; sourceTree = SOURCE_ROOT; };
 		48A1AB6A1DBFF8A8008BA385 /* Generics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Generics.playground; path = Playgrounds/Generics.playground; sourceTree = SOURCE_ROOT; };
 		8301E70D1E01B97E0074C13B /* MoreFunctions.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = MoreFunctions.playground; path = Playgrounds/MoreFunctions.playground; sourceTree = SOURCE_ROOT; };
 		831321B11DBEACBA000C8BBB /* ProtocolsAndExtensions.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = ProtocolsAndExtensions.playground; path = Playgrounds/ProtocolsAndExtensions.playground; sourceTree = SOURCE_ROOT; };
@@ -206,6 +208,8 @@
 				8338C8801E244436003DFE80 /* MoreErrorHandling.playground */,
 				83B6B04C1E25542A0080BAD6 /* TypeCasting.playground */,
 				83605FB11E26A70900D1B4E7 /* NestedTypes.playground */,
+				48980BE91E28554E006BCEAC /* Extensions.playground */,
+				48980BEA1E285EA1006BCEAC /* Protocols.playground */,
 			);
 			name = Playgrounds;
 			sourceTree = "<group>";
