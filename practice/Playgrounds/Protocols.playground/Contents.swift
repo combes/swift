@@ -35,10 +35,10 @@ var ncc1701 = Starship(name: "Enterprise", prefix: "USS")
 
 // Method Requirements
 protocol RandomNumberGenerator {
-    func random() -> Dobule
+    func random() -> Double
 }
 
-class LinearCongruentialGenerator: {
+class LinearCongruentialGenerator: RandomNumberGenerator {
     var lastRandom = 42.0
     let m = 139968.0
     let a = 3877.0

@@ -19,7 +19,7 @@ extension String : SpecialProtocol {
 extension Double {
     var km: Double { return self * 1_000.0 }
     var m: Double { return self }
-    var cm: Double { return self/ 100.0 }
+    var cm: Double { return self / 100.0 }
     var mm: Double { return self / 1_000.0 }
     var ft: Double { return self / 3.28084 }
 }
@@ -55,7 +55,7 @@ extension Rect {
     init(center: Point, size: Size) {
         let originX = center.x - (size.width / 2)
         let originY = center.y - (size.height / 2)
-        self.init(origin: Point(x, originX, y: originY), size: size)
+        self.init(origin: Point(x: originX, y: originY), size: size)
     }
 }
 
