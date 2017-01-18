@@ -40,6 +40,7 @@
 		48980BEA1E285EA1006BCEAC /* Protocols.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Protocols.playground; path = Playgrounds/Protocols.playground; sourceTree = SOURCE_ROOT; };
 		48A1AB6A1DBFF8A8008BA385 /* Generics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Generics.playground; path = Playgrounds/Generics.playground; sourceTree = SOURCE_ROOT; };
 		8301E70D1E01B97E0074C13B /* MoreFunctions.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = MoreFunctions.playground; path = Playgrounds/MoreFunctions.playground; sourceTree = SOURCE_ROOT; };
+		830276B81E2FD4C7001D8D24 /* AccessControl.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = AccessControl.playground; path = Playgrounds/AccessControl.playground; sourceTree = SOURCE_ROOT; };
 		831321B11DBEACBA000C8BBB /* ProtocolsAndExtensions.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = ProtocolsAndExtensions.playground; path = Playgrounds/ProtocolsAndExtensions.playground; sourceTree = SOURCE_ROOT; };
 		8315C79A1DBAC64F00FADFA0 /* EnumerationsAndStructures.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = EnumerationsAndStructures.playground; path = Playgrounds/EnumerationsAndStructures.playground; sourceTree = SOURCE_ROOT; };
 		8316BFDC1E1DA07800ED4800 /* AutomaticReferenceCounting.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = AutomaticReferenceCounting.playground; path = Playgrounds/AutomaticReferenceCounting.playground; sourceTree = SOURCE_ROOT; };
@@ -212,6 +213,7 @@
 				48980BE91E28554E006BCEAC /* Extensions.playground */,
 				48980BEA1E285EA1006BCEAC /* Protocols.playground */,
 				83731B631E2ED4D300B5F40E /* MoreGenerics.playground */,
+				830276B81E2FD4C7001D8D24 /* AccessControl.playground */,
 			);
 			name = Playgrounds;
 			sourceTree = "<group>";
