@@ -100,7 +100,7 @@ extension Int {
 746381295[1]
 746381295[2]
 746381295[8]
-746381295[99]
+// 746381295[99] // Error: Outside bounds
 
 // Nested Types
 extension Int {
