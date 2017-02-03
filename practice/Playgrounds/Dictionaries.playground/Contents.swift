@@ -1,6 +1,8 @@
 //: Playground - noun: a place where people can play
 // Excerpt From: Apple Inc. “The Swift Programming Language (Swift 3).” iBooks. https://itun.es/us/jEUH0.l
 
+import Foundation
+
 var nameOfIntegers = [Int: String]()
 nameOfIntegers[16] = "sixteen"
 nameOfIntegers = [:] // Empty dictionary
@@ -54,3 +56,10 @@ let airportNames = [String](airports.values) // Initialize an array with Values
 for airportCode in airports.keys.sorted() {
     print("Airport code: \(airportCode)")
 }
+
+// Testing access of dictionary values
+var values = [String: Any?]()
+values["name"] = 1
+let name = values["name"] as? String // result is 'nil'
+let value = values["name"] // result is "1" with implicit type
+

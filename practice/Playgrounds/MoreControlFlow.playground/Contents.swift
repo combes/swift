@@ -116,7 +116,7 @@ print("There are \(naturalCount) \(countedThings).")
 // Switch on Tuples
 let somePoint = (1, 1)
 switch somePoint {
-case (0, 0): // duplicate matchin cases allowed (all four match 0,0)
+case (0, 0): // duplicate matching cases allowed (all four match 0,0)
     print("(0, 0) is at the origin")
 case (_, 0): // '-' is also known as the wildcard pattern to match any possible values
     print("(\(somePoint.0), 0) is on the x-axis")
