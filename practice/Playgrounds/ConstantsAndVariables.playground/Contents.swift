@@ -43,7 +43,7 @@ monkeyState.description()
 var `var` = "Value"
 
 // Changing value
-var friendlyWelcome = "Hello~"
+var friendlyWelcome = "Hello!"
 friendlyWelcome = "Bonjour!"
 
 // Constants are immutable
@@ -56,7 +56,7 @@ print([friendlyWelcome, monkeyState], separator: " | ", terminator: "\n")
 print([friendlyWelcome, monkeyState], separator: " | ", terminator: "")
 
 // String interpolation
-print("The current value of friendlyWelcoe is \(friendlyWelcome)")
+print("The current value of friendlyWelcome is \(friendlyWelcome)")
 
 // Comments
 // Single-line comment.
