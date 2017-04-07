@@ -11,16 +11,20 @@
 /// - Parameter max: Maximum value
 /// - Returns: Sum of all multiples
 func findSumAllMultiples(max: Int) -> Int {
-    var sum = 0
     
-    // Natural numbers are the counting numbers as 1, 2, 3, etc.
-    for i in 1..<max {
-        if i % 3 == 0 || i % 5 == 0 {
-            sum += i
-        }
-    }
+    let array = Array(1..<max)
+    return array.filter { $0 % 3 == 0 || $0 % 5 == 0 }.reduce(0, { x, y in x + y } )
     
-    return sum
+//    var sum = 0
+//    
+//    // Natural numbers are the counting numbers as 1, 2, 3, etc.
+//    for i in 1..<max {
+//        if i % 3 == 0 || i % 5 == 0 {
+//            sum += i
+//        }
+//    }
+//    
+//    return sum
 }
 
 assert(findSumAllMultiples(max: 1000) == 233168)
