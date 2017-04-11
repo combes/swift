@@ -58,7 +58,7 @@ let fridgeContent = ["milk", "eggs", "leftovers"]
 func fridgeContains(_ food: String) -> Bool {
     fridgeIsOpen = true
     defer {
-        print("Deferred") // NOTE: Not seeing this print in playground
+        print("Deferred")
         fridgeIsOpen = false
     }
     
