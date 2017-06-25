@@ -103,7 +103,7 @@ struct LevelTracker {
     }
     
     // NOTE: Not seeing a compiler warning here.
-    //@discardableResult // Remove compiler warning if result is not used
+    @discardableResult // Remove compiler warning if result is not used
     mutating func advance(to level: Int) -> Bool {
         if LevelTracker.isUnlocked(level) {
             currentLevel = level

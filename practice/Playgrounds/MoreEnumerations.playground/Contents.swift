@@ -101,6 +101,7 @@ if let somePlanet = PlanetRaw(rawValue: positionToFind) { // Optional binding
 }
 
 // Recursive Enumerations
+// You indicate that an enumeration case is recursive by writing indirect before it.
 enum ArithmeticExpression {
     case number(Int)
     indirect case addition(ArithmeticExpression, ArithmeticExpression)
