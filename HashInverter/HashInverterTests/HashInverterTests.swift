@@ -46,7 +46,7 @@ class HashInverterTests: XCTestCase {
         do {
             _ = try String(HashConverter().hashValue("1"))
             XCTFail("Expected throw")
-        } catch HashError.InvalidCharacter(let text) {
+        } catch HashError.invalidCharacter(let text) {
             XCTAssertEqual(text, "1")
         } catch {
             XCTFail("Expected throw for invalid character")
@@ -57,7 +57,7 @@ class HashInverterTests: XCTestCase {
         do {
             _ = try HashConverter().invertHash("0")
             XCTFail("Expected throw")
-        } catch HashError.OutOfRange {
+        } catch HashError.outOfRange {
             XCTAssertTrue(true)
         } catch {
             XCTFail("Expected throw for out of range")
@@ -68,7 +68,7 @@ class HashInverterTests: XCTestCase {
         do {
             _ = try HashConverter().invertHash("275")
             XCTFail("Expected throw")
-        } catch HashError.InvalidHash {
+        } catch HashError.invalidHash {
             XCTAssertTrue(true)
         } catch {
             XCTFail("Expected throw for invalid hash")
@@ -79,7 +79,7 @@ class HashInverterTests: XCTestCase {
         do {
             _ = try HashConverter().invertHash("w")
             XCTFail("Expected throw")
-        } catch HashError.DigitsRequired {
+        } catch HashError.digitsRequired {
             XCTAssertTrue(true)
         } catch {
             XCTFail("Expected throw for digits required")
@@ -88,7 +88,7 @@ class HashInverterTests: XCTestCase {
 
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock {
+        self.measure {
             // Put the code you want to measure the time of here.
         }
     }

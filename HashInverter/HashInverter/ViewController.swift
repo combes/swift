@@ -7,6 +7,30 @@
 //
 
 import UIKit
+// FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
+// Consider refactoring the code to use the non-optional operators.
+fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l < r
+  case (nil, _?):
+    return true
+  default:
+    return false
+  }
+}
+
+// FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
+// Consider refactoring the code to use the non-optional operators.
+fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l > r
+  default:
+    return rhs < lhs
+  }
+}
+
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
@@ -30,7 +54,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         textField.delegate = self
         
         // Add listener for text changes so we can enable/disable the buttons
-        textField.addTarget(self, action: "didChangeText:", forControlEvents: .EditingChanged)
+        textField.addTarget(self, action: #selector(ViewController.didChangeText(_:)), for: .editingChanged)
         self.didChangeText(textField)
         
         // Prompt user to enter text by showing keyboard
@@ -40,7 +64,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         errorLabel.text = ""
         
         // Set version
-        let versionNumber = NSBundle.mainBundle().objectForInfoDictionaryKey("CFBundleShortVersionString") as! String
+        let versionNumber = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as! String
         versionLabel.text = versionNumber
     }
     
@@ -50,18 +74,18 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     // MARK: Helper Methods
-    func updateOwlImage(faceLeft: Bool) {
+    func updateOwlImage(_ faceLeft: Bool) {
         let image = UIImage(named: "owl")
         
         if faceLeft == true {
             self.owlImage.image = image
         } else {
-            self.owlImage.image = UIImage(CGImage: image!.CGImage!, scale: 1.0, orientation: .UpMirrored)
+            self.owlImage.image = UIImage(cgImage: image!.cgImage!, scale: 1.0, orientation: .upMirrored)
         }
     }
     
     // MARK: Outlet Methods
-    @IBAction func showHashButtonTapped(sender: UIButton) {
+    @IBAction func showHashButtonTapped(_ sender: UIButton) {
         let hashConverter = HashConverter()
         
         self.updateOwlImage(true)
@@ -70,7 +94,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         if textField.text?.characters.count > HashConverter.maxStringLength {
             // Trim the string and warn the user
             let text = textField.text!
-            textField.text = text[text.startIndex..<text.startIndex.advancedBy(HashConverter.maxStringLength)]
+            textField.text = text[text.startIndex..<text.characters.index(text.startIndex, offsetBy: HashConverter.maxStringLength)]
             errorLabel.text = "Hash limited to \(HashConverter.maxStringLength) letters."
             return
         }
@@ -78,27 +102,27 @@ class ViewController: UIViewController, UITextFieldDelegate {
         do {
             try self.textField.text = String(hashConverter.hashValue(self.textField.text!))
             errorLabel.text = ""
-        } catch HashError.InvalidCharacter(let text) {
+        } catch HashError.invalidCharacter(let text) {
             errorLabel.text = "Character '\(text)' is invalid."
-        } catch HashError.OverFlowOccurred {
+        } catch HashError.overFlowOccurred {
             errorLabel.text = "Overflow occurred."
         } catch {
             errorLabel.text = "Unknown error."
         }
     }
     
-    @IBAction func showInverseButtonTapped(sender: UIButton) {
+    @IBAction func showInverseButtonTapped(_ sender: UIButton) {
         
         self.updateOwlImage(false)
         
         do {
             try self.textField.text = HashConverter().invertHash(self.textField.text!)
             errorLabel.text = ""
-        } catch HashError.OutOfRange {
+        } catch HashError.outOfRange {
             errorLabel.text = "Value out of range."
-        } catch HashError.InvalidHash {
+        } catch HashError.invalidHash {
             errorLabel.text = "Hash is invalid."
-        } catch HashError.DigitsRequired {
+        } catch HashError.digitsRequired {
             errorLabel.text = "Only digits allowed."
         } catch {
             errorLabel.text = "Unknown error."
@@ -106,20 +130,20 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     // MARK: Helper Methods
-    func didChangeText(textField:UITextField) {
-        self.showHashButton.enabled = textField.hasText()
-        self.showHashButton.alpha = textField.hasText() ? 1.0 : 0.5
-        self.showInverseButton.enabled = textField.hasText()
-        self.showInverseButton.alpha = textField.hasText() ? 1.0 : 0.5
+    func didChangeText(_ textField:UITextField) {
+        self.showHashButton.isEnabled = textField.hasText
+        self.showHashButton.alpha = textField.hasText ? 1.0 : 0.5
+        self.showInverseButton.isEnabled = textField.hasText
+        self.showInverseButton.alpha = textField.hasText ? 1.0 : 0.5
     }
     
     // MARK: UITextFieldDelegate Methods
-    func textFieldShouldClear(textField: UITextField) -> Bool {
+    func textFieldShouldClear(_ textField: UITextField) -> Bool {
         errorLabel.text = ""
         return true
     }
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
     }

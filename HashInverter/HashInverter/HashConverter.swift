@@ -8,12 +8,12 @@
 
 import Foundation
 
-enum HashError: ErrorType {
-    case InvalidCharacter(text: String)
-    case InvalidHash
-    case OverFlowOccurred
-    case OutOfRange
-    case DigitsRequired
+enum HashError: Error {
+    case invalidCharacter(text: String)
+    case invalidHash
+    case overFlowOccurred
+    case outOfRange
+    case digitsRequired
 }
 
 /*
@@ -46,47 +46,47 @@ class  HashConverter {
     let letters = HashConverter.alphabet
     
     
-    func hashValue(s: String) throws -> Int64 {
+    func hashValue(_ s: String) throws -> Int64 {
         var total: Int64 = seed
 
         // Iterate through each character entered by user so that we can convert it
         for character in s.characters {
     
             // Hash letters are constrained to our alphabet
-            guard letters.containsString(String(character)) else {
-                throw HashError.InvalidCharacter(text: String(character))
+            guard letters.contains(String(character)) else {
+                throw HashError.invalidCharacter(text: String(character))
             }
             
             // Find the index of the current character in the loop
-            let range: Range<String.Index> = letters.rangeOfString(String(character))!
-            let intIndex: Int = letters.startIndex.distanceTo(range.startIndex)
+            let range: Range<String.Index> = letters.range(of: String(character))!
+            let intIndex: Int = letters.characters.distance(from: letters.startIndex, to: range.lowerBound)
             
             // Calculate total while allowing for overflow
             total = (total &* offset &+ Int64(intIndex))
 
             // If overflow occurs we get a negative number
             guard total > 0 else {
-                throw HashError.OverFlowOccurred
+                throw HashError.overFlowOccurred
             }
         }
         
         return total
     }
     
-    func invertHash(s: String) throws -> String {
+    func invertHash(_ s: String) throws -> String {
         
         var hash = ""
         let checkValue = Int64(s)
         
         guard checkValue != nil else {
-            throw HashError.DigitsRequired
+            throw HashError.digitsRequired
         }
         
         var value: Int64 = checkValue!
         
         // Hash range is limited
         guard value <= maxValue() && value >= minValue() else {
-            throw HashError.OutOfRange
+            throw HashError.outOfRange
         }
         
         while value > seed {
@@ -97,7 +97,7 @@ class  HashConverter {
             // Find an evenly divisible value by checking the modulus
             for index in 0...letters.characters.count - 1 {
                 
-                let nextValue = value - index
+                let nextValue = value - Int64(index)
                 let modulus = nextValue % offset
 #if DEBUG
                 print("\(value) - \(index) = \(nextValue) % \(offset) = \(modulus)")
@@ -105,11 +105,11 @@ class  HashConverter {
                 if modulus == 0 {
                     // We found an evenly divisible value so we can insert this letter
                     found = true
-                    let c: Character = letters[letters.startIndex.advancedBy(index)]
-                    hash.insert(c, atIndex: hash.startIndex)
+                    let c: Character = letters[letters.characters.index(letters.startIndex, offsetBy: index)]
+                    hash.insert(c, at: hash.startIndex)
                     
                     // Update value for next iteration
-                    value -= index
+                    value -= Int64(index)
                     value /= offset
                     
                     // Exit inner loop to see if we are done
@@ -118,7 +118,7 @@ class  HashConverter {
             }
             
             if found == false {
-                throw HashError.InvalidHash
+                throw HashError.invalidHash
             }
         }
         

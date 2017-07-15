@@ -33,11 +33,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let path = NSBundle.mainBundle().pathForResource("blip", ofType: "wav")
-        let soundUrl = NSURL(fileURLWithPath: path!)
+        let path = Bundle.main.path(forResource: "blip", ofType: "wav")
+        let soundUrl = URL(fileURLWithPath: path!)
         
         do {
-            try buttonSound = AVAudioPlayer(contentsOfURL: soundUrl)
+            try buttonSound = AVAudioPlayer(contentsOf: soundUrl)
             buttonSound.prepareToPlay()
         } catch let error as NSError {
             print(error.debugDescription)
@@ -49,7 +49,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func numberPressed(button: UIButton!) {
+    @IBAction func numberPressed(_ button: UIButton!) {
         playSound()
 
         if runningNumber == valueZero {
@@ -61,27 +61,27 @@ class ViewController: UIViewController {
         outputLabel.text = runningNumber
     }
     
-    @IBAction func onDividePressed(sender: AnyObject) {
+    @IBAction func onDividePressed(_ sender: AnyObject) {
         processOperation(Operation.Divide)
     }
     
-    @IBAction func onMultiplyPressed(sender: AnyObject) {
+    @IBAction func onMultiplyPressed(_ sender: AnyObject) {
         processOperation(Operation.Multiply)
     }
     
-    @IBAction func onSubtractPressed(sender: AnyObject) {
+    @IBAction func onSubtractPressed(_ sender: AnyObject) {
         processOperation(Operation.Subtract)
     }
     
-    @IBAction func onAddPressed(sender: AnyObject) {
+    @IBAction func onAddPressed(_ sender: AnyObject) {
         processOperation(Operation.Add)
     }
     
-    @IBAction func onEqualsPressed(sender: AnyObject) {
+    @IBAction func onEqualsPressed(_ sender: AnyObject) {
         processOperation(currentOperation)
     }
     
-    @IBAction func onClearPressed(sender: AnyObject) {
+    @IBAction func onClearPressed(_ sender: AnyObject) {
         playSound()
         runningNumber = valueZero
         outputLabel.text = runningNumber
@@ -89,7 +89,7 @@ class ViewController: UIViewController {
         currentOperation = Operation.Empty
     }
     
-    func processOperation(operation: Operation) {
+    func processOperation(_ operation: Operation) {
         playSound()
         
         if currentOperation != Operation.Empty {
@@ -123,7 +123,7 @@ class ViewController: UIViewController {
     }
     
     func playSound() {
-        if buttonSound.playing {
+        if buttonSound.isPlaying {
             buttonSound.stop()
         }
         
