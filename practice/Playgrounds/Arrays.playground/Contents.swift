@@ -45,6 +45,47 @@ for (index, value) in shoppingList.enumerated() {
     print("Item \(index + 1): \(value)")
 }
 
+// Example of references versus value types in collection class
+class Something: CustomDebugStringConvertible {
+    var name = ""
+    init(name: String) {
+        self.name = name
+    }
+    var debugDescription: String {
+        return self.name
+    }
+}
+
+// Create two objects
+var s1 = Something(name: "a")
+var s2 = Something(name: "b")
+
+// Create two arrays containing both objects
+let somethings1 = [s1, s2]
+let somethings2 = somethings1 // Value types (the array contents) are copied
+s1.name = "z" // Reference types are modifed
+debugPrint(somethings1) // Contents of both arrays are modified
+debugPrint(somethings2)
+
+struct Another: CustomDebugStringConvertible {
+    var name = ""
+    var debugDescription: String {
+        return self.name
+    }
+}
+
+var a1 = Another(name: "c")
+var a2 = Another(name: "d")
+let anothers1 = [a1,a2]
+let anothers2 = anothers1 // Value types (the array contents) are copied
+a1.name = "z" // Value in array remains unmodified since it is a copy.
+debugPrint(anothers1)
+debugPrint(anothers2)
+
+
+
+
+
 
 
 
