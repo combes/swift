@@ -37,7 +37,7 @@ do {
 
 // Provide multiple 'catch' blocks to handle specific errors.
 do {
-    let printerResponse = try send(job: 1440, toPrinter: "Gutenberg")
+    _ = try send(job: 1440, toPrinter: "Gutenberg")
     throw PrinterError.outOfPaper // Testing throwing an error here
     // print(printerResponse)
 } catch PrinterError.onFire {

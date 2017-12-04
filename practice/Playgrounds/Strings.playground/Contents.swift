@@ -170,6 +170,11 @@ for scalar in dogString.unicodeScalars {
     print("\(scalar.value) ", terminator: "")
 }
 
+let text = """
+This is a multi-
+line string
+"""
+print(text)
 
 
 

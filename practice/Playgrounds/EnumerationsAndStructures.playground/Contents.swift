@@ -44,7 +44,7 @@ func compare(first: Rank, second: Rank) -> ComparisonResult {
 
 // Use the init?(rawValue:) initializaer to make an instance of an enumeration from a raw value.
 if let convertedRank = Rank(rawValue: 3) {
-    let description = convertedRank.simpleDescription()
+    _ = convertedRank.simpleDescription()
 }
 
 enum Suit {

@@ -1,7 +1,7 @@
 //: Playground - noun: a place where people can play
 
-if #available(iOS 10, *) {
-    print("iOS 10 APIs available")
+if #available(iOS 11, *) {
+    print("iOS 11 APIs available")
 } else {
-    print("iOS 10 APIs not available")
+    print("iOS 11 APIs not available")
 }
