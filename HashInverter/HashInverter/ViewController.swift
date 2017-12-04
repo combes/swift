@@ -94,7 +94,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         if textField.text?.characters.count > HashConverter.maxStringLength {
             // Trim the string and warn the user
             let text = textField.text!
-            textField.text = text[text.startIndex..<text.characters.index(text.startIndex, offsetBy: HashConverter.maxStringLength)]
+            textField.text = String(text[text.startIndex..<text.characters.index(text.startIndex, offsetBy: HashConverter.maxStringLength)])
             errorLabel.text = "Hash limited to \(HashConverter.maxStringLength) letters."
             return
         }
@@ -130,7 +130,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     // MARK: Helper Methods
-    func didChangeText(_ textField:UITextField) {
+    @objc func didChangeText(_ textField:UITextField) {
         self.showHashButton.isEnabled = textField.hasText
         self.showHashButton.alpha = textField.hasText ? 1.0 : 0.5
         self.showInverseButton.isEnabled = textField.hasText
