@@ -36,7 +36,7 @@ class RatingControl: UIView {
             
             button.adjustsImageWhenHighlighted = false
             
-            button.addTarget(self, action: #selector(RatingControl.ratingButtonTapped(button:)), for: .touchDown)
+            button.addTarget(self, action: #selector(ratingButtonTapped(button:)), for: .touchDown)
             ratingButtons += [button]
             addSubview(button)
         }
@@ -64,7 +64,7 @@ class RatingControl: UIView {
     }
     
     // MARK: Button Action
-    func ratingButtonTapped(button: UIButton) {
+    @objc func ratingButtonTapped(button: UIButton) {
         rating = ratingButtons.index(of: button)! + 1
         
         updateButtonSelectionStates()
