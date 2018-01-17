@@ -193,7 +193,7 @@ default:
 // Continue
 let puzzleInput = "great minds think alike"
 var puzzleOutput = ""
-for character in puzzleInput.characters {
+for character in puzzleInput {
     switch character {
     case "a", "e", "i", "o", "u", " ":
         continue

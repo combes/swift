@@ -20,7 +20,7 @@ let constantString = "Highlander"
 // Passing a string makes a copy and therefore modifications are local and do not mutate the original object.
 
 // Working with Characters
-for character in "Doggie! 🐶".characters {
+for character in "Doggie! 🐶" {
     print(character)
 }
 
@@ -70,15 +70,15 @@ let regionalIndicatorForUS: Character = "\u{1F1FA}\u{1F1F8}"
 
 // Counting characters
 let unusualMenagerie = "Koala 🐨, Snail 🐌, Penguin 🐧, Dromedary 🐪"
-print("unusualMenagerie has \(unusualMenagerie.characters.count) characters")
+print("unusualMenagerie has \(unusualMenagerie.count) characters")
 var symbolMenagerie = "🐨🐌🐧🐪"
-symbolMenagerie.characters.count
+symbolMenagerie.count
 
 // Appending a diacritic will not change the word count.
 var word = "cafe"
-word.characters.count
+word.count
 word += "\u{301}"
-word.characters.count
+word.count
 
 // Performance note: Counting # of characters requires iteration in order to determine the grapheme clusters.
 
@@ -93,7 +93,7 @@ greeting[index]
 // greeting.index(after: greeting.endIndex) // error
 
 // Use the indices property to access individual characters.
-for index in greeting.characters.indices {
+for index in greeting.indices {
     print("\(greeting[index]) ", terminator: "")
 }
 // startIndex, endIndex, and other properties are available on Array, Dictionary, and Set.
@@ -101,7 +101,7 @@ for index in greeting.characters.indices {
 // Inserting and Removing Characters
 var hello = "hello"
 hello.insert("!", at: hello.endIndex)
-hello.insert(contentsOf: " there".characters, at: hello.index(before: hello.endIndex))
+hello.insert(contentsOf: " there", at: hello.index(before: hello.endIndex))
 hello.remove(at: hello.index(before: hello.endIndex))
 let range = hello.index(hello.endIndex, offsetBy: -6)..<hello.endIndex
 hello.removeSubrange(range)
