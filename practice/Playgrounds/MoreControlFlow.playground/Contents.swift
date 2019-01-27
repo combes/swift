@@ -164,7 +164,7 @@ extension Character
 
 someCharacter = "e"
 switch someCharacter {
-case "a", "e", "i", "o", "i":
+case "a", "e", "i", "o", "u":
     print("\(someCharacter) is a vowel")
 case let (c) where c.hashValue > 96 && c.hashValue < 123:
     print("\(someCharacter) is a consonant")
